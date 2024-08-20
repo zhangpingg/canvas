@@ -7,6 +7,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import people from '@/assets/people.jpg';
 
 // 缩放图片
 const drawImageByScale = (canvas, ctx, img, scale) => {
@@ -26,7 +27,7 @@ const initCanvas = () => {
     canvas.width = 300;
     canvas.height = 300;
     var scale = slider.value;
-    img.src = '/canvas/src/assets/people.jpg';
+    img.src = people;
     img.onload = function () {
         drawImageByScale(canvas, ctx, img, scale);
         slider.onmousemove = function () {

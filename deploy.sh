@@ -12,7 +12,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f https://github.com/zhangpingg/vue3.git master:gh-pages
+git push -f https://github.com/zhangpingg/canvas.git master:gh-pages
 
 # 切换当前工作目录到上一个工作目录
 cd -

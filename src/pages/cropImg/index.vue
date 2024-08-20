@@ -6,6 +6,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import people from '@/assets/people.jpg';
 
 /*
 1)在画布上定位图像
@@ -19,7 +20,7 @@ const initCanvas = () => {
     var img = new Image();
     c.width = 200;
     c.height = 200;
-    img.src = '/canvas/src/assets/people.jpg';
+    img.src = people;
     img.onload = function () {
         //ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, 320, 320, 0, 0, c.width / 2, c.height / 2);

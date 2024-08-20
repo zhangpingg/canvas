@@ -37,6 +37,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import roadBg from '@/assets/road-bg.jpg';
 
 // 直线路径
 const line = () => {
@@ -133,7 +134,7 @@ const photo = () => {
     var c = document.getElementById('myCanvas11');
     var ctx = c.getContext('2d');
     var img = new Image();
-    img.src = '/canvas/src/assets/photo1.jpg';
+    img.src = roadBg;
     img.onload = function () {
         ctx.drawImage(img, 0, 0, c.width, c.height); // ctx.drawImage(img,x,y,width,height); 把一幅图像放置到画布上
     };
@@ -160,3 +161,4 @@ canvas {
     margin-right: 20px;
 }
 </style>
+

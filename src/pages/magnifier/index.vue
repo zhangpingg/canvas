@@ -7,6 +7,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import people from '@/assets/people.jpg';
 
 // 初始化
 const initCanvas = () => {
@@ -23,7 +24,7 @@ const initCanvas = () => {
     canvas.width = 300;
     canvas.height = 300;
 
-    image.src = '/canvas/src/assets/people.jpg';
+    image.src = people;
     image.onload = function () {
         offCanvas.width = image.width;
         offCanvas.height = image.height;

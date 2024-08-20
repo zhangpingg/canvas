@@ -8,6 +8,7 @@
 
 <script setup>
 import { onMounted } from 'vue';
+import people from '@/assets/people.jpg';
 
 // 初始化
 const initCanvas = () => {
@@ -21,7 +22,7 @@ const initCanvas = () => {
     canvas.width = 300;
     canvas.height = 300;
     var scale = slider.value;
-    img.src = '/canvas/src/assets/people.jpg';
+    img.src = people;
     // 图片加载完后，将其显示在canvas中
     img.onload = function () {
         drawImageByScale(scale);

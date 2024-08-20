@@ -1,5 +1,7 @@
 ### Canvas 适用于简单的 2D 图形绘制
 
+[文档地址](https://zhangpingg.github.io/canvas/home)
+
 ### 功能
 
 ```
