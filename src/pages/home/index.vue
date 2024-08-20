@@ -5,6 +5,7 @@
         <span @click="jumpPage('cropImg')">裁剪图片</span><br />
         <span @click="jumpPage('scaleImg')">缩放图片</span><br />
         <span @click="jumpPage('watermark')">缩放图片+水印</span><br />
+        <span @click="jumpPage('magnifier')">图片放大镜</span><br />
     </div>
 </template>
 

@@ -59,6 +59,15 @@ const routes = [
             cache: true
         },
         component: () => import('@/pages/watermark/index.vue')
+    },
+    {
+        path: `/magnifier`,
+        name: 'magnifier',
+        meta: {
+            title: '放大镜',
+            cache: true
+        },
+        component: () => import('@/pages/magnifier/index.vue')
     }
 ];
 
