@@ -1,6 +1,9 @@
 <template>
-    <div class="home"><span @click="jumpPage('test')">测试</span><br /></div>
-    <div class="home"><span @click="jumpPage('baseCanvas')">基础的canvas</span><br /></div>
+    <div class="home">
+        <span @click="jumpPage('test')">测试</span><br />
+        <span @click="jumpPage('baseCanvas')">基础的canvas</span><br />
+        <span @click="jumpPage('cropImg')">裁剪图片</span><br />
+    </div>
 </template>
 
 <script setup>

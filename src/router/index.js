@@ -32,6 +32,15 @@ const routes = [
             cache: true
         },
         component: () => import('@/pages/baseCanvas/index.vue')
+    },
+    {
+        path: `/cropImg`,
+        name: 'cropImg',
+        meta: {
+            title: '裁剪图片',
+            cache: true
+        },
+        component: () => import('@/pages/cropImg/index.vue')
     }
 ];
 
