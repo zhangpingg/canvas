@@ -50,6 +50,15 @@ const routes = [
             cache: true
         },
         component: () => import('@/pages/scaleImg/index.vue')
+    },
+    {
+        path: `/watermark`,
+        name: 'watermark',
+        meta: {
+            title: '水印',
+            cache: true
+        },
+        component: () => import('@/pages/watermark/index.vue')
     }
 ];
 

@@ -14,7 +14,7 @@ const drawImageByScale = (canvas, ctx, img, scale) => {
     var imgHeight = 640 * scale;
     var dx = canvas.width / 2 - imgWidth / 2;
     var dy = canvas.height / 2 - imgHeight / 2;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // 清除画布上的所有内容
     ctx.drawImage(img, dx, dy, imgWidth, imgHeight);
 };
 // 初始化
