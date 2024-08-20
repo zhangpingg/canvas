@@ -23,6 +23,15 @@ const routes = [
             cache: true
         },
         component: () => import('@/pages/test/index.vue')
+    },
+    {
+        path: `/baseCanvas`,
+        name: 'baseCanvas',
+        meta: {
+            title: '基础的canvas',
+            cache: true
+        },
+        component: () => import('@/pages/baseCanvas/index.vue')
     }
 ];
 

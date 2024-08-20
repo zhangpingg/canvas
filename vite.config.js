@@ -11,7 +11,7 @@ export default defineConfig({
         host: '0.0.0.0',
         port: 8080,
         cors: true,
-        origin: 'http://localhost:8084/zp',
+        origin: 'http://localhost:8080',
         proxy: {
             '/test/api': {
                 target: 'http://10.1.13.23',
@@ -25,9 +25,7 @@ export default defineConfig({
     },
     plugins: [vue(), vueJsx()],
     resolve: {
-        alias: {
-            '@': path.resolve(__dirname, 'src'),
-            extensions: ['.js', '.vue', '.json']
-        }
+        alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
+        extensions: ['.js', '.vue', '.json']
     }
 });
