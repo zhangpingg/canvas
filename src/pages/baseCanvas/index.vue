@@ -30,9 +30,8 @@
         <span>空心彩色渐变文字</span>
         <canvas id="myCanvas10" width="200" height="100"></canvas>
 
-        <!-- 图片 -->
-        <!--<canvas id="myCanvas7" width="200" height="100"></canvas>
-        <img src="@/assets/photo1.jpg" id="pic-1" style="display: none; width: 100%; height: auto" alt="" />-->
+        <span>图片</span>
+        <canvas id="myCanvas11" width="200" height="100"></canvas>
     </div>
 </template>
 
@@ -129,6 +128,16 @@ const textHollowGradient = () => {
     ctx.strokeStyle = grd;
     ctx.strokeText('Big smile!', 10, 50);
 };
+// 图片
+const photo = () => {
+    var c = document.getElementById('myCanvas11');
+    var ctx = c.getContext('2d');
+    var img = new Image();
+    img.src = '/canvas/src/assets//photo1.jpg';
+    img.onload = function () {
+        ctx.drawImage(img, 10, 10); // 把一幅图像放置到画布上
+    };
+};
 
 onMounted(() => {
     line();
@@ -141,6 +150,7 @@ onMounted(() => {
     textSolid();
     textHollow();
     textHollowGradient();
+    photo();
 });
 </script>
 
