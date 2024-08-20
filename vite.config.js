@@ -9,9 +9,9 @@ export default defineConfig({
     publicPath: '/canvas',
     server: {
         host: '0.0.0.0',
-        port: 8080,
+        port: 8000,
         cors: true,
-        origin: 'http://localhost:8080',
+        origin: 'http://localhost:8000',
         proxy: {
             '/test/api': {
                 target: 'http://10.1.13.23',
@@ -29,3 +29,4 @@ export default defineConfig({
         extensions: ['.js', '.vue', '.json']
     }
 });
+

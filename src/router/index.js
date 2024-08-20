@@ -41,6 +41,15 @@ const routes = [
             cache: true
         },
         component: () => import('@/pages/cropImg/index.vue')
+    },
+    {
+        path: `/scaleImg`,
+        name: 'scaleImg',
+        meta: {
+            title: '缩放图片',
+            cache: true
+        },
+        component: () => import('@/pages/scaleImg/index.vue')
     }
 ];
 
@@ -50,3 +59,4 @@ const router = createRouter({
 });
 
 export default router;
+

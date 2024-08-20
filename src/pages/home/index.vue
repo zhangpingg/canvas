@@ -3,6 +3,7 @@
         <span @click="jumpPage('test')">测试</span><br />
         <span @click="jumpPage('baseCanvas')">基础的canvas</span><br />
         <span @click="jumpPage('cropImg')">裁剪图片</span><br />
+        <span @click="jumpPage('scaleImg')">缩放图片</span><br />
     </div>
 </template>
 
@@ -27,3 +28,4 @@ const jumpPage = (path) => {
     }
 }
 </style>
+
